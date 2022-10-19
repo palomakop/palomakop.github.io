@@ -1,0 +1,22 @@
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: auto;
+    margin: 0 32px;
+  }
+}
+
+body {
+  background: linear-gradient(#bdd3b9, #bd5153);
+  background-attachment: fixed;
+}
+
+html,
+body {
+  height: 100%;
+}
