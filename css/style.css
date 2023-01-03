@@ -1,3 +1,20 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  background-color:#dce6da;
+  background-image: linear-gradient(#dce6da, #e39a9c);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
 .container {
   width: 720px;
   margin: 0 auto;
@@ -9,16 +26,4 @@
     width: auto;
     margin: 0 32px;
   }
-}
-
-body {
-  background: linear-gradient(#dce6da, #e39a9c);
-  background-attachment: fixed;
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-}
-
-html,body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
 }
