@@ -12,8 +12,9 @@
 }
 
 body {
-  background: linear-gradient(#bdd3b9, #bd5153);
+  background: linear-gradient(#dce6da, #e39a9c);
   background-attachment: fixed;
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 html,body {
