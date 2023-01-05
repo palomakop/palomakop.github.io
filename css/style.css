@@ -12,11 +12,16 @@ body {
   background-image: radial-gradient(#d2e7e3, #d49db8);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-family: Monaco, Menlo, Consolas, Liberation Mono, Lucida Console, monospace;
 }
 
 .container {
   width: 720px;
+  margin: 0 auto;
+}
+
+.wide-container {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -34,12 +39,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  opacity: 0.5;
-}
-
-header {
-  display: block;
-  padding: 20px 0px;
 }
 
 main {
@@ -48,13 +47,14 @@ main {
   width: 100%;
 }
 
-footer {
-  clear: both;
-  padding: 10px 0px;
+header {
+  display: block;
+  padding: 20px 0px;
 }
 
 #header-image {
-  width:320px;
+  width: 320px;
+  height: 40px;
   margin-right: 15px;
 }
 
@@ -70,26 +70,65 @@ h1 {
 
 h2 {
   text-transform: uppercase;
+  font-size: 1.3em;
+  margin-bottom: 1em;
 }
+
+/* NAVIGATION */
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   float: left;
-  font-weight: bold;
 }
 
 nav ul li {
   float: left;
-  list-style-type: none;
-  font-size: 14pt;
-  border: solid 1.5px;
+  font-size: 1em;
+  border: solid 1px;
   border-radius: 5px;
-  padding: 3px 5px;
-  margin: 5px;
+  padding: 3px 8px;
+  margin: 6px 8px;
+}
+
+nav ul li a{
+  text-decoration:none;
 }
 
 nav ul li:hover {
+  filter: invert();
+}
+
+/* FOOTER */
+
+footer {
+  clear: both;
+  padding: 10px 0px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+footer ul {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+footer ul {
+  float: left;
+  list-style-type: none;
+}
+
+footer ul li img {
+  height: 30px;
+  width: 30px;
+  padding: 3px 8px 3px 0px;
+  margin: 6px 8px 6px 0px;
+}
+
+footer ul li:hover {
   filter: invert();
 }
