@@ -12,7 +12,9 @@ body {
   background-image: radial-gradient(#d2e7e3, #d49db8);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: Monaco, Menlo, Consolas, Liberation Mono, Lucida Console, monospace;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
 }
 
 .container {
@@ -55,7 +57,7 @@ header {
 #header-image {
   width: 320px;
   height: 40px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 #header-image:hover {
@@ -72,6 +74,7 @@ h2 {
   text-transform: uppercase;
   font-size: 1.3em;
   margin-bottom: 1em;
+  letter-spacing: .02em;
 }
 
 /* NAVIGATION */
@@ -86,10 +89,10 @@ nav ul {
 nav ul li {
   float: left;
   font-size: 1em;
-  border: solid 1px;
+  border: solid 1.5px;
   border-radius: 5px;
   padding: 3px 8px;
-  margin: 6px 8px;
+  margin: 6px 16px 6px 0px;
 }
 
 nav ul li a{
@@ -119,17 +122,30 @@ footer ul {
 
 footer ul li {
   float: left;
+  padding: 3px 8px 3px 0px;
+  margin: 6px 8px 6px 0px;
+}
+
+footer ul li a{
+  text-decoration:none;
 }
 
 footer ul li img {
   height: 30px;
   width: 30px;
-  padding: 3px 8px 3px 0px;
-  margin: 6px 8px 6px 0px;
 }
 
 footer ul li:hover {
   filter: invert();
+}
+
+.license-icons {
+  margin-top:5px;
+}
+
+.license-icons img {
+  height: 20px;
+  width: 20px;
 }
 
 .graphic {
