@@ -168,9 +168,9 @@ footer ul li:hover {
 
 .gallery-item {
   width: 320px;
-  height:fit-content;
+  height: max-content;
   float: left;
-  margin-right:30px;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -184,6 +184,10 @@ footer ul li:hover {
   }
 }
 
+.gallery-item:hover {
+  filter: invert();
+}
+
 .gallery-item img {
   max-width: 100%;
   height: auto;
@@ -191,21 +195,31 @@ footer ul li:hover {
   border-radius: 5px;
 }
 
+.gallery-item .caption {
+  height: 7em;
+  overflow: visible;
+}
+
 .gallery-item h2 {
   text-align:center;
   margin: 0;
   font-size:1em;
+  text-transform:none;
 }
 
 .gallery-item p {
   text-align:center;
   margin: .2em 0 .5em 0;
-  font-size:small;
+  font-size:0.8em;
 }
 
-.tag {
+.gallery-item .tag {
   background:#000000;
   border-radius: 5px;
   color: #FFFFFF;
   padding: 3px 6px;
+}
+
+.gallery-item .title {
+  font-style:italic;
 }
