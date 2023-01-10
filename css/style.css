@@ -168,7 +168,6 @@ footer ul li:hover {
 
 .gallery-item {
   width: 320px;
-  height: max-content;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -179,6 +178,11 @@ footer ul li:hover {
   height: 240px;
   border: solid 1.5px;
   border-radius: 5px;
+}
+
+.gallery-item .caption {
+  height: 7em;
+  overflow: visible;
 }
 
 @media only screen and (max-width: 784px) {
@@ -196,6 +200,10 @@ footer ul li:hover {
     width: calc(100% - 3px);
     height: auto;
   }
+
+  .gallery-item .caption {
+    height: auto;
+  }
 }
 
 .gallery-item a {
@@ -204,11 +212,6 @@ footer ul li:hover {
 
 .gallery-item a:hover {
   filter: invert();
-}
-
-.gallery-item .caption {
-  height: 7em;
-  overflow: visible;
 }
 
 .gallery-item h2 {
