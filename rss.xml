@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paloma Kop</title>
-    <link>https://palomakop.tv</link>
+    <title>Paloma Kop ♦ RSS Feed</title>
+    <link>https://palomakop.tv/news</link>
     <description>Multimedia art, experiments, and explorations.</description>
+    <image>
+      <url>https://s3.amazonaws.com/palomakop.tv/og_image.jpg</url>
+      <title>Paloma Kop ♦ RSS Feed</title>
+      <link>https://palomakop.tv/news</link>
+    </image>
     <pubDate>Thu, 12 Jan 2023</pubDate>
     <item>
       <title>2022-08-27 ♦ MERCURALIA at Phase Space</title>
