@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paloma Kop ♦ RSS Feed</title>
-    <link>https://palomakop.tv/news</link>
+    <link>https://palomakop.tv</link>
     <description>Multimedia art, experiments, and explorations.</description>
     <image>
       <url>https://s3.amazonaws.com/palomakop.tv/og_image.jpg</url>
       <title>Paloma Kop ♦ RSS Feed</title>
-      <link>https://palomakop.tv/news</link>
+      <link>https://palomakop.tv</link>
     </image>
     <atom:link href="https://palomakop.tv/rss.xml" rel="self" type="application/rss+xml" />
     <pubDate>Thu, 12 Jan 2023 12:00:00 EST</pubDate>
@@ -17,15 +17,27 @@
       <guid>https://palomakop.tv/news/2022/#2022-08-27</guid>
       <description>
         <![CDATA[
-          <a href="https://palomakop.tv/news/2022/#2022-08-27">
-            <img src="https://s3.amazonaws.com/palomakop.tv/news/2022/2022-08-27/mercuralia_flyer.jpg" alt="Mercuralia show flyer" style="max-width: 720px;max-height: 720px;height: auto;width: auto;/>
-          </a>
+          <a href="https://palomakop.tv/news/2022/#2022-08-27"><img src="https://s3.amazonaws.com/palomakop.tv/news/2022/2022-08-27/mercuralia_flyer.jpg" alt="Mercuralia show flyer" style="max-width: 720px;max-height: 720px;height: auto;width: auto;"/></a>
           <p>
             Our late summer show at Phase Space... <a href="https://palomakop.tv/news/2022/#2022-08-27">Read more↗</a>
           </p>
         ]]>
       </description>
       <pubDate>Sat, 27 Aug 2022 12:00:00 EST</pubDate>
+    </item>
+        <item>
+      <title>2022-08-19 ♦ Open Space Encounters at Maverick Concert Hall</title>
+      <link>https://palomakop.tv/news/2022/#2022-08-19</link>
+      <guid>https://palomakop.tv/news/2022/#2022-08-19</guid>
+      <description>
+        <![CDATA[
+          <a href="https://palomakop.tv/news/2022/#2022-08-19"><img src="https://s3.amazonaws.com/palomakop.tv/news/2022/2022-08-19/open_space_flyer.jpg" alt="Open space concert flyer" style="max-width: 720px;max-height: 720px;height: auto;width: auto;"/></a>
+          <p>
+            Open Space Encounters: Music from the Time of Renewal... <a href="https://palomakop.tv/news/2022/#2022-08-19">Read more↗</a>
+          </p>
+        ]]>
+      </description>
+      <pubDate>Fri, 19 Aug 2022 12:00:00 EST</pubDate>
     </item>
   </channel>
 </rss>
