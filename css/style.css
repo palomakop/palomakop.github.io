@@ -9,7 +9,7 @@ body {
   width: 100%;
   top: 0;
   margin: 0;
-  background-image: radial-gradient(#d2e7e3, #d49db8);
+  background-image: radial-gradient(#d9e7eb, #e6d5de);
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
@@ -63,7 +63,6 @@ main {
 
 .bottom-nav {
   margin-top: 3em;
-  font-size: 1.2em;
 }
 
 .bottom-nav-left {
@@ -72,6 +71,13 @@ main {
 
 .bottom-nav-right {
   float: right;
+}
+
+/* TOP NAV ("back to..." buttons) */
+
+.top-nav {
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /* HEADER */
