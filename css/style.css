@@ -304,6 +304,25 @@ footer ul li:hover {
   border-bottom: 2px dotted;
 }
 
+/* VIDEOS */
+
+.video-container {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.video-caption {
+  margin-top: 0.2em;
+  font-style: italic;
+}
+
 /* ABOUT PAGE */
 
 .infobox {
