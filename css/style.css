@@ -59,25 +59,33 @@ main {
   clear: both;
 }
 
-/* BOTTOM NAV ("next" and "previous" buttons) */
+/* BUTTON NAV ("next" and "previous" buttons) */
 
-.bottom-nav {
+.button-nav {
   margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
-.bottom-nav-left {
-  float: left;
+.button {
+  display: inline-block;
+  border: solid 1.5px;
+  border-radius: 5px;
+  width: auto;
+  margin-bottom: 5px;
 }
 
-.bottom-nav-right {
-  float: right;
+.button:hover {
+  filter: invert();
 }
 
-/* TOP NAV ("back to..." buttons) */
-
-.top-nav {
-  margin-top: 1em;
-  margin-bottom: 2em;
+.button a {
+  padding: 3px 8px;
+  text-decoration:none;
 }
 
 /* HEADER */
@@ -271,6 +279,7 @@ footer ul li:hover {
 
 .news-item {
   margin-top: 3em;
+  margin-bottom: 4em;
 }
 
 .news-item img {
@@ -321,6 +330,10 @@ video {
 .video-caption {
   margin-top: 0.2em;
   font-style: italic;
+}
+
+.video-caption a:after {
+  content: '↗';
 }
 
 /* ABOUT PAGE */
