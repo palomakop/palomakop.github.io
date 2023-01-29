@@ -345,27 +345,32 @@ video {
 
 .infobox ul {
   list-style-type: none;
-  padding: 0.5em 0 0 0;
-  margin: 0;
+  padding: 0;
+  margin: 5px 0 10px 0;
 }
 
 .infobox ul li {
-  padding: 0.1em;
-  font-weight: bold;
-  font-size: 1em;
+  margin-bottom: 3px;
 }
 
 .infobox ul li a {
   text-decoration: none;
 }
 
-.infobox ul li a:hover {
-  filter: invert();
-}
-
 .infobox img {
   border: solid 1.5px;
   border-radius: 5px;
+}
+
+.infobox-list-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.infobox-list-title:before {
+  content: ' ';
+  clear: right;
+  display: block;
 }
 
 @media only screen and (min-width: 785px) {
@@ -389,6 +394,7 @@ video {
     max-width: 720px;
     flex-shrink: 1;
   }
+
 }
 
 @media only screen and (max-width: 784px) {
@@ -403,5 +409,16 @@ video {
 
   .text-column {
     margin-top: 2em;
+  }
+
+  .infobox ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5em;
+  }
+
+  .infobox ul li {
   }
 }
