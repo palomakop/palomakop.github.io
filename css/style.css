@@ -1,6 +1,7 @@
 html {
   height: 100%;
   padding: env(safe-area-inset); /* for iphone notch */
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
 body {
@@ -37,16 +38,6 @@ body {
   }
 }
 
-a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: dotted underline;
-  text-decoration-thickness: 2px;
-}
-
 main {
   clear: both;
   padding: 30px 0px;
@@ -68,8 +59,14 @@ h2 {
   letter-spacing: .02em;
 }
 
-p {
-  font-size: 1em;
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: dotted underline;
+  text-decoration-thickness: 2px;
 }
 
 /* BUTTON NAV ("next" and "previous" buttons) */
