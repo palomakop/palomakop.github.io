@@ -59,6 +59,19 @@ main {
   clear: both;
 }
 
+/* TEXT */
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  letter-spacing: .02em;
+}
+
+p {
+  font-size: 1em;
+}
+
 /* BUTTON NAV ("next" and "previous" buttons) */
 
 .button-nav {
@@ -110,13 +123,6 @@ h1 {
   display: block;
   float: left;
   margin: 0;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-size: 1.3em;
-  margin-bottom: 1em;
-  letter-spacing: .02em;
 }
 
 /* NAVIGATION */
