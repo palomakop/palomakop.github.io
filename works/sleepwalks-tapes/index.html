@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
   <!-- page title -->
-  <title>Magnetic Field Recordings ♦ Paloma Kop</title>
+  <title>Sleepwalks Tapes ♦ Paloma Kop</title>
   
   <link rel="icon" type="image/x-icon" sizes="any" href="https://s3.amazonaws.com/palomakop.tv/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="https://s3.amazonaws.com/palomakop.tv/favicon.svg">
@@ -37,19 +37,37 @@
   
   <!-- css -->
   <style>
-    body { background-image: radial-gradient(#cde8d4, #cee7d2, #cfebeb); }
+    body { background-image: radial-gradient(#cddfe8, #d7d7e0, #f5e2ed); }
   </style>
 
   <!-- opengraph tags -->
   <meta property="og:description" content="Paloma Kop - experimental multimedia artist">
   <meta property="og:image" content="https://s3.amazonaws.com/palomakop.tv/og_image.jpg">
 
+  <!-- pause any other audio elements if another is played -->
+  <!-- note: the page will still work fine without this -->
+  <script>
+    function onlyPlayOneIn(container) {
+      container.addEventListener("play", function(event) {
+      audio_elements = container.getElementsByTagName("audio")
+        for(i=0; i < audio_elements.length; i++) {
+          audio_element = audio_elements[i];
+          if (audio_element !== event.target) {
+            audio_element.pause();
+          }
+        }
+      }, true);
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      onlyPlayOneIn(document.body);
+    });
+  </script>
+
 </head>
 
 <body>
 
   <div class="container">
-    <div class="column-container">
       <header>
         <h1><a href="/"><img src="https://s3.amazonaws.com/palomakop.tv/header.svg" id="header-image" alt="Paloma Kop"/></a></h1>
         <nav>
@@ -73,7 +91,69 @@
           <a href="/">&larr;back to index</a>
         </div>
 
-        <h2>Magnetic Field Recordings</h2>
+        <div class="gallery">
+          <div class="album">
+            <img src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/young_and_ugly.jpg" />
+
+            <div class="album-lower">
+              <h2>Sleepwalks - Young & Ugly</h2>
+
+              <p class="album-caption">
+                Released 2017-04-20 | <a href="https://palomakop.bandcamp.com/album/young-ugly">Listen on Bandcamp</a>
+              </p>
+
+              <p>
+                <b>Side A</b>
+              </p>
+
+              <audio controls>
+                <source src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/young_and_ugly_side_a.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Here is a direct link to the <a href="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/young_and_ugly_side_a.mp3">mp3 file</a>.
+              </audio>
+
+              <p>
+                <b>Side B</b>
+              </p>
+
+              <audio controls>
+                <source src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/young_and_ugly_side_b.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Here is a direct link to the <a href="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/young_and_ugly_side_b.mp3">mp3 file</a>.
+              </audio>
+            </div>
+          </div>
+
+          <div class="album">
+            <img src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/psychic_safari.jpg" />
+
+            <div class="album-lower">
+              <h2>Sleepwalks - Psychic Safari</h2>
+
+              <p class="album-caption">
+                Released 2018-04-20 | <a href="https://palomakop.bandcamp.com/album/psychic-safari">Listen on Bandcamp</a>
+              </p>
+
+              <p>
+                <b>Side A</b>
+              </p>
+
+              <audio controls>
+                <source src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/psychic_safari_side_a.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Here is a direct link to the <a href="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/psychic_safari_side_a.mp3">mp3 file</a>.
+              </audio>
+
+              <p>
+                <b>Side B</b>
+              </p>
+
+              <audio controls>
+                <source src="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/psychic_safari_side_b.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. Here is a direct link to the <a href="https://s3.amazonaws.com/palomakop.tv/works/sleepwalks-tapes/psychic_safari_side_b.mp3">mp3 file</a>.
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="column-container">
 
         <p>
           Magnetic Field Recordings is a series of images and sounds collected over the course of several years, using cameras, a radio scanner, oscillators, and an oscilloscope. The result is a hybrid space combining the environment’s imagery and solar radiation with electronically produced signals and transmissions. We scan through various morphing geometric forms and drifting radio signals, exploring the harmonics and textures of this hybrid space. Locations of the recordings include Brooklyn, upstate New York, Chicago, and Central Asia.
