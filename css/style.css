@@ -79,9 +79,11 @@ a {
   text-decoration-thickness:1.5px;
 }
 
-a:hover {
-  text-decoration:dotted underline;
-  text-decoration-thickness:2px;
+@media (hover: hover) {
+  a:hover {
+    text-decoration:dotted underline;
+    text-decoration-thickness:2px;
+  }
 }
 
 /* BUTTON NAV ("next" and "previous" buttons) */
@@ -104,8 +106,10 @@ a:hover {
   margin-bottom:5px;
 }
 
-.button:hover {
-  filter:invert();
+@media (hover: hover) {
+  .button:hover {
+    filter:invert();
+  }
 }
 
 .button a {
@@ -127,8 +131,10 @@ header {
   margin-right:20px;
 }
 
-#header-image:hover {
-  filter:invert();
+@media (hover: hover) {
+  #header-image:hover {
+    filter:invert();
+  }
 }
 
 h1 {
@@ -160,13 +166,15 @@ nav ul li a{
   text-decoration:none;
 }
 
-nav ul li:hover {
-  filter:invert();
-  text-decoration:none;
-}
+@media (hover: hover) {
+  nav ul li:hover {
+    filter:invert();
+    text-decoration:none;
+  }
 
-nav ul li a:hover {
-  text-decoration:none;
+  nav ul li a:hover {
+    text-decoration:none;
+  }
 }
 
 /* FOOTER */
@@ -202,8 +210,10 @@ footer ul li img {
   width:30px;
 }
 
-footer ul li:hover {
-  filter:invert();
+@media (hover: hover) {
+  footer ul li:hover {
+    filter:invert();
+  }
 }
 
 .license-icons {
@@ -262,8 +272,10 @@ footer ul li:hover {
   text-decoration:none;
 }
 
-.gallery-item a:hover {
-  filter:invert();
+@media (hover: hover) {
+  .gallery-item a:hover {
+    filter:invert();
+  }
 }
 
 .gallery-item h2 {
@@ -558,17 +570,20 @@ form textarea:focus {
 }
 
 form button {
-  border:1.5px solid;
+  border:1.5px solid #000;
   border-radius:5px;
   padding:5px 10px;
   font-size:1em;
   font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  color:#000;
   background:none transparent;
   cursor:pointer;
 }
 
-form button:hover {
-  filter:invert();
+@media (hover: hover) {
+  form button:hover {
+    filter:invert();
+  }
 }
 
 :focus-visible {
