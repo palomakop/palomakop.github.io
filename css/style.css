@@ -10,6 +10,7 @@ body {
   width:100%;
   top:0;
   margin:0;
+  background-color:#f1f0e9;
   background-image:radial-gradient(#d9e7eb, #e6d5de);
   background-attachment:fixed;
   background-repeat:no-repeat;
@@ -65,6 +66,10 @@ h2 {
   text-transform:uppercase;
   font-size:1.3em;
   margin-bottom:1em;
+  letter-spacing:.02em;
+}
+
+h3 {
   letter-spacing:.02em;
 }
 
@@ -660,4 +665,31 @@ form button {
   to {
     transform:translateX(-100%);
   }
+}
+
+/* CV */
+
+.cv h3 {
+  border-bottom:2px dotted;
+  margin-top:1.5em;
+}
+
+.cv p {
+  text-indent:-4em;
+  padding-left:4em;
+}
+
+.cv .year {
+  font-weight:bold;
+  display:inline-block;
+  float:left;
+  margin:0;
+  min-width:4em;
+}
+
+.cv a {
+  font-style:italic;
+}
+
+.cv a:after {
 }
