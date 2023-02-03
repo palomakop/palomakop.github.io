@@ -267,6 +267,7 @@ footer ul li img {
   }
 
   .gallery-item img {
+    aspect-ratio:4/3;
     width:100%;
     width:calc(100% - 3px);
     height:auto;
@@ -441,6 +442,7 @@ video {
   }
 
   .infobox img {
+    aspect-ratio:4/3;
     width:100%;
     height:auto;
   }
