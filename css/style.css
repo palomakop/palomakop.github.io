@@ -46,12 +46,17 @@ main {
 
 .graphic {
   display:block;
-  margin:2em auto;
+  margin:2em 0;
   clear:both;
+  max-width:300px;
 }
 
 img {
-  max-width: 100%;
+  max-width:100%;
+}
+
+li {
+  margin-bottom:1em;
 }
 
 /* TEXT */
@@ -61,6 +66,11 @@ h2 {
   font-size:1.3em;
   margin-bottom:1em;
   letter-spacing:.02em;
+}
+
+.piece-title {
+  text-transform:none;
+  font-style:italic;
 }
 
 a {
@@ -338,6 +348,7 @@ video {
 
 .video-caption {
   margin-top:0.2em;
+  margin-bottom:2em;
   font-style:italic;
 }
 
@@ -392,6 +403,7 @@ video {
 
   .infobox {
     width:280px;
+    flex-shrink:0;
   }
 
   .infobox img {
@@ -495,4 +507,103 @@ video {
 
 .album-caption a:after {
   content:'↗';
+}
+
+/* FORMS */
+
+form {
+  max-width:450px;
+  margin-top:2em;
+}
+
+form label {
+  display:block;
+}
+
+form input {
+  width:100%;
+  height:2em;
+  border:1.5px solid;
+  border-radius:5px;
+  margin:1em 0;
+  font-size:1em;
+  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  display:block;
+}
+
+form input[type=checkbox] {
+  margin:0 0 2em;
+  width:1.2em;
+  height:1.2em;
+  display:inline-block;
+}
+
+form input:focus {
+  border:1.5px dotted;
+}
+
+form textarea {
+  width:100%;
+  height:8em;
+  resize:none;
+  border:1.5px solid;
+  border-radius:5px;
+  margin:1em 0;
+  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  font-size:1em;
+}
+
+form textarea:focus {
+  border:1.5px dotted;
+}
+
+form button {
+  border:1.5px solid;
+  border-radius:5px;
+  padding:5px 10px;
+  font-size:1em;
+  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  background:none transparent;
+  cursor:pointer;
+}
+
+form button:hover {
+  filter:invert();
+}
+
+:focus-visible {
+  outline:none;
+}
+
+/* MARQUEE */
+
+.marquee {
+  display:flex;
+  overflow:hidden;
+  user-select:none;
+}
+
+.marquee-content {
+  flex-shrink:0;
+  display:flex;
+  width:100%;
+  justify-content:space-around;
+  list-style:none;
+  gap:30px;
+  animation:scroll 15s linear infinite;
+  margin:0;
+  padding:0 0 0 30px;
+}
+
+.marquee-content li {
+  margin:0;
+}
+
+@keyframes scroll {
+  from {
+    transform:translateX(0);
+  }
+  to {
+    transform:translateX(calc(-100%));
+  }
 }
