@@ -56,10 +56,6 @@ img {
   max-width:100%;
 }
 
-li {
-  margin-bottom:1em;
-}
-
 /* TEXT */
 
 h2 {
@@ -71,6 +67,7 @@ h2 {
 
 h3 {
   letter-spacing:.02em;
+  margin-top:1.5em;
 }
 
 .piece-title {
@@ -88,7 +85,17 @@ a {
   a:hover {
     text-decoration:dotted underline;
     text-decoration-thickness:2px;
+    color:#210acf;
   }
+}
+
+ul {
+  padding-left:35px;
+  margin-top:1em;
+}
+
+li {
+  margin-bottom:1em;
 }
 
 /* BUTTON NAV ("next" and "previous" buttons) */
@@ -111,15 +118,19 @@ a {
   margin-bottom:5px;
 }
 
-@media (hover: hover) {
-  .button:hover {
-    filter:invert();
-  }
-}
-
 .button a {
   padding:3px 8px;
   text-decoration:none;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color:#000000;
+    filter:invert();
+  }
+  .button a:hover {
+    color:#000000;
+  }
 }
 
 /* HEADER */
@@ -138,6 +149,7 @@ header {
 
 @media (hover: hover) {
   #header-image:hover {
+    color:#000000;
     filter:invert();
   }
 }
@@ -178,6 +190,7 @@ nav ul li a{
   }
 
   nav ul li a:hover {
+    color:#000000;
     text-decoration:none;
   }
 }
@@ -217,6 +230,7 @@ footer ul li img {
 
 @media (hover: hover) {
   footer ul li:hover {
+    color:#000000;
     filter:invert();
   }
 }
@@ -280,6 +294,7 @@ footer ul li img {
 
 @media (hover: hover) {
   .gallery-item a:hover {
+    color:#000000;
     filter:invert();
   }
 }
@@ -577,18 +592,18 @@ form textarea:focus {
 }
 
 form button {
-  border:1.5px solid #000;
+  border:1.5px solid;
   border-radius:5px;
   padding:5px 10px;
   font-size:1em;
   font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
-  color:#000;
   background:none transparent;
   cursor:pointer;
 }
 
 @media (hover: hover) {
   form button:hover {
+    color:#000000;
     filter:invert();
   }
 }
@@ -699,5 +714,17 @@ form button {
   font-style:italic;
 }
 
-.cv a:after {
+/* TABLE OF CONTENTS */
+
+.table-of-contents {
+  margin-bottom:2em;
+}
+
+.table-of-contents ul {
+  margin-top:0;
+  padding-bottom:0;
+}
+
+.table-of-contents li {
+  margin:0;
 }
