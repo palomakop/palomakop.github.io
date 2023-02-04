@@ -142,12 +142,12 @@
         <h3>Why Build With Plain HTML/CSS?</h3>
 
         <p>
-          I began creating this website at the end of 2022. Before then, I had been maintaining a website built with Cargo since about 2016. But over time, I began to realize that I needed to build my own website natively with HTML and CSS. Here are some of my goals in doing so:
+          I began creating this website at the end of 2022. Before then, I had been maintaining a website built with Cargo since about 2016. But over time, I began to realize that I needed to build my own website natively with HTML and CSS. Here were some of my goals in doing so:
         </p>
 
         <ul>
           <li>
-            I wanted my site to exist as a set of self-contained files on my computer, and be edited in a text editing program, without requiring anything else to load its pages or run. This allows me to:
+            I wanted my site to exist as a set of self-contained files, which could be edited in a text-editing program, without requiring anything else to build or load its pages. This would allow me to:
             <ul>
               <li>
                 Host the site on any static site server, and move between hosting services or self-hosting at will, giving me control over the costs and freeing me from any customer lock-in or dependence on centralized services
@@ -161,7 +161,7 @@
             </ul>
           </li>
           <li>
-            I wanted control over all aspects of the site in order to make it accessible and friendly to low-bandwidth users (including my future self)
+            I wanted control over all aspects of the site in order to make it accessible, tracker-free, and friendly to low-bandwidth users (including my future self)
           </li>
           <li>
             I have found writing HTML and CSS to be a fun and rewarding creative activity!
@@ -169,7 +169,7 @@
         </ul>
 
         <p>
-          Thus, this new site was born. Creating the layout and rebuilding the pages from my old site has taken a bit less than two months of working in my spare time. I have definitely learned a lot from the process and am looking forward to building more!
+          Thus, this site was born. Creating the layout and rebuilding the pages from my old site has taken a little under two months of working in my spare time. I have definitely learned a lot from the process and am looking forward to building more!
         </p>
 
         <p>
@@ -185,17 +185,17 @@
         </p>
 
         <p>
-          In the future, I would like to set up a VPS, from which I could host multiple sites and have SSH access to the server itself. But this is has been a good first step, and is very low cost.
+          In the future, I would like to set up a VPS, from which I can host multiple sites and have SSH access to the server itself. But this is has been a good first step, and is very low cost.
         </p>
 
         <h4>Media Embedding</h4>
           
         <p>
-          Video and audio is embedded using the html5 <code>&lt;video></code> and <code>&lt;audio></code> elements. <code>&lt;video></code> tags are set to not preload, so the videos don't add much to the bandwidth of the page until the play button is pressed. Most of the videos are encoded as 720p, with a webm version and an mp4 version. The maximum bitrate for these is about 3000kbps, but many of the videos are much lower, depending on the complexity and movement of the imagery. I used Handbrake to encode my video files and Reaper to encode my mp3s.
+          Video and audio is embedded using the native html5 <code>&lt;video></code> and <code>&lt;audio></code> elements. <code>&lt;video></code> tags are set to <code>preload="none"</code>, so the videos don't add much to the bandwidth of the page until the play button is pressed. Most of the videos are encoded as 720p, with a webm version and an mp4 version. The maximum bitrate for these is about 3000kbps, but many of the videos are much lower, depending on the complexity and movement of the imagery. I used Handbrake to encode my video files and Reaper to encode my mp3 audio files.
         </p>
 
         <p>
-          Images are encoded as jpegs and are pretty small as well. On the News pages, which tend to have more scrolling, I set <code>loading="lazy"</code> for more bandwidth friendliness. I also created a number of SVG vector graphics that are used around the site.
+          Most of the images are encoded as jpegs, and are optimized for a balance of quality and file size. On the News pages, which tend to have more scrolling, I set <code>loading="lazy"</code> for more bandwidth friendliness. I also created a number of SVG vector graphics that are used around the site.
         </p>
 
         <h4>A Note About Videos</h4>
