@@ -45,17 +45,6 @@ main {
   width:100%;
 }
 
-.graphic {
-  display:block;
-  margin:2em 0;
-  clear:both;
-  max-width:300px;
-}
-
-img {
-  max-width:100%;
-}
-
 /* TEXT */
 
 h2 {
@@ -96,6 +85,32 @@ ul {
 
 li {
   margin-bottom:1em;
+}
+
+/* IMAGES */
+
+.graphic {
+  display:block;
+  margin:2em 0;
+  clear:both;
+  max-width:300px;
+}
+
+.pixel-art {
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.centered {
+  display: block;
+  margin:2em auto;
+}
+
+img {
+  max-width:100%;
 }
 
 /* BUTTON NAV ("next" and "previous" buttons) */
