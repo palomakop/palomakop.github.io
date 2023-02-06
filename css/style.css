@@ -415,6 +415,10 @@ video {
   border-radius:5px;
 }
 
+.photo-grid-vertical a {
+  line-height:1;
+}
+
 /* ABOUT PAGE */
 
 .infobox {
