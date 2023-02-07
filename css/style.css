@@ -424,13 +424,14 @@ video {
 
 .photo-grid-vertical a, .photo-grid-2-columns a {
   line-height:1;
+  cursor: zoom-in;
 }
 
 .photo-grid-2-columns {
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap:1.2em;
-  margin-top:1.4em;
+  margin-top:1.6em;
   margin-bottom:1.4em;
 }
 
