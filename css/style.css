@@ -87,6 +87,13 @@ li {
   margin-bottom:1em;
 }
 
+code {
+  font-family: Courier, monospace;
+  font-size:1em;
+  background-color:#dcdcdc96;
+  padding:1px 4px;
+}
+
 /* IMAGES */
 
 .graphic {
