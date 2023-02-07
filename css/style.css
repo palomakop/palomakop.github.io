@@ -418,12 +418,20 @@ video {
   margin-bottom:1.4em;
 }
 
-.photo-grid-vertical img {
+.photo-grid-vertical img, .photo-grid-2-columns img {
   border-radius:5px;
 }
 
-.photo-grid-vertical a {
+.photo-grid-vertical a, .photo-grid-2-columns a {
   line-height:1;
+}
+
+.photo-grid-2-columns {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1.2em;
+  margin-top:1.4em;
+  margin-bottom:1.4em;
 }
 
 /* ABOUT PAGE */

@@ -44,6 +44,10 @@
   <meta property="og:description" content="Paloma Kop - experimental multimedia artist">
   <meta property="og:image" content="https://s3.amazonaws.com/palomakop.tv/og_image.jpg">
 
+  <!-- simple lightbox -->
+  <link href="/simplelightbox/slb.css" rel="stylesheet">
+  <script src="/simplelightbox/slb.js"></script>
+
 </head>
 
 <body>
@@ -96,6 +100,19 @@
         <p>
           <i>Edge of Light</i> was a light art exhibition curated by fellow artist <a href="https://chromadetic.com/" target="_blank" rel="noopener">Jonathan Sims</a> for HoloCenter. I performed this a/v set for the exhibition opening, using an 8 foot spherical weather balloon as my projection surface. The opening performances were curated by <a href="https://www.testucollective.com/"  target="_blank" rel="noopener">Testu Collective</a>, and the documentation was shot by Shintaro Ueyama.
         </p>
+
+        <div class="photo-grid-2-columns lightbox">
+          <a href="https://s3.amazonaws.com/palomakop.tv/works/edge-of-light/edge_of_light_1_2160px.jpg">
+            <img src="https://s3.amazonaws.com/palomakop.tv/works/edge-of-light/edge_of_light_1_720px.jpg" alt="Video Topography sculpture - front view" loading="lazy"/>
+          </a>
+          <a href="https://s3.amazonaws.com/palomakop.tv/works/edge-of-light/edge_of_light_2_2160px.jpg">
+            <img src="https://s3.amazonaws.com/palomakop.tv/works/edge-of-light/edge_of_light_2_720px.jpg" alt="close-up view" loading="lazy"/>
+          </a>
+        </div>
+
+        <script>
+          new SimpleLightbox({elements: '.lightbox a'});
+        </script>
 
         <div class="button-nav">
           <div class="button"><a href="/works/magnetic-field-recordings">&larr;previous</a></div>
