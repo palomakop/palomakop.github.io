@@ -418,6 +418,10 @@ video {
   margin-bottom:1.4em;
 }
 
+.news-item .photo-grid-vertical {
+  margin-top:1.6em;
+}
+
 .photo-grid-vertical img, .photo-grid-2-columns img {
   border-radius:5px;
 }
@@ -433,6 +437,10 @@ video {
   gap:1.2em;
   margin-top:1.6em;
   margin-bottom:1.4em;
+}
+
+.photo-grid-2-columns img {
+  max-width:100%;
 }
 
 @media only screen and (max-width:500px) {
