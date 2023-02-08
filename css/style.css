@@ -433,7 +433,6 @@ video {
 
 .photo-grid-2-columns {
   display:grid;
-  grid-template-columns: 1fr 1fr;
   gap:1.2em;
   margin-top:1.6em;
   margin-bottom:1.4em;
@@ -441,6 +440,15 @@ video {
 
 .photo-grid-2-columns img {
   max-width:100%;
+}
+
+@media only screen and (min-width:500px) {
+  .photo-grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  .full-width {
+    grid-column:span 2;
+  }
 }
 
 @media only screen and (max-width:500px) {
