@@ -145,8 +145,14 @@ img {
   text-decoration:none;
 }
 
+.button.current-link {
+  padding:0px 8px;
+  color:#ffffff;
+  background-color:#000000;
+}
+
 @media (hover:hover) {
-  .button:hover {
+  .button:not(.current-link):hover {
     color:#000000;
     filter:invert();
   }
@@ -154,6 +160,8 @@ img {
     color:#000000;
   }
 }
+
+
 
 /* HEADER */
 
