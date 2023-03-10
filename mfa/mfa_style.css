@@ -1,15 +1,5 @@
-h2 {
-  font-size:1em;
-}
-
 h2 img.centered {
   margin-top:1em;
-}
-
-@media only screen and (max-width:500px) {
-  h2 img.centered {
-    margin-top:0;
-  }
 }
 
 h3 {
