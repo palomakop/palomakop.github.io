@@ -451,7 +451,7 @@ video {
 }
 
 .photo-grid-tarot img {
-  max-width:500px;
+  max-width:min(100%, 400px);
   max-height:95vh;
 }
 
