@@ -450,9 +450,20 @@ video {
   max-width:100%;
 }
 
-.photo-grid-tarot img {
-  max-width:100%;
-  max-height:95vh;
+
+
+@media only screen and (min-width:501px) {
+  .photo-grid-tarot img {
+    max-width:400px;
+    max-height:95vh;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .photo-grid-tarot img {
+    max-width:100%;
+    max-height:85vh;
+  }
 }
 
 .photo-grid-tarot a {
