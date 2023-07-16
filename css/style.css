@@ -428,6 +428,13 @@ video {
   margin-bottom:1.4em;
 }
 
+.photo-grid-tarot {
+  display:grid;
+  gap:2em;
+  margin:2em 0;
+  justify-items: center;
+}
+
 .news-item .photo-grid-vertical {
   margin-top:1.4em;
 }
@@ -441,6 +448,21 @@ video {
 
 .photo-grid-2-columns img, .photo-grid-3-columns img {
   max-width:100%;
+}
+
+.photo-grid-tarot img {
+  max-width:500px;
+  max-height:95vh;
+}
+
+.photo-grid-tarot a {
+  text-decoration:none;
+  text-align:center;
+  font-style:italic;
+}
+
+.photo-grid-tarot a:hover {
+  color:#000000;
 }
 
 .photo-grid-vertical img, .photo-grid-2-columns img, .photo-grid-3-columns img {
