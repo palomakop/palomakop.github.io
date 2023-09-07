@@ -38,6 +38,7 @@
   <!-- css -->
   <style>
     body { background-image: radial-gradient(#d6daf4, #cfdfea, #d1ebdb); }
+
   </style>
 
   <!-- opengraph tags -->
@@ -72,7 +73,7 @@
 
       <main>
 
-        <h2>Code Playground</h2>
+        <h2>Code Playground<i>!</i></h2>
 
         <p>
           A place to test out things with javascript and glsl and <code>&lt;canvas></code>!
@@ -82,13 +83,19 @@
 
         <p>A fragment shader rendered into a <code>&lt;canvas></code> using <a href="https://github.com/patriciogonzalezvivo/glslCanvas" target="_blank" rel="noopener">glslCanvas</a>:</p>
 
-        <canvas class="glslCanvas" data-fragment-url="spiral.frag" width="720" height="720" style="max-width:100%;aspect-ratio:1;"></canvas>
+        <canvas class="glslCanvas" data-fragment-url="spiral.frag" width="1440" height="1440" style="max-width:100%;aspect-ratio:1;"></canvas>
+
+        <h3>Oscillator</h3>
+
+        <p>Also a fragment shader rendered into a <code>&lt;canvas></code> using <a href="https://github.com/patriciogonzalezvivo/glslCanvas" target="_blank" rel="noopener">glslCanvas</a>. This one has mouse interaction (mouseX controls frequency, mouseY controls phase and wiggliness):</p>
+
+        <canvas class="glslCanvas" data-fragment-url="oscillator.frag" width="1440" height="810" style="max-width:100%;aspect-ratio:16/9;"></canvas>
 
       </main>
 
       <footer>
         <p>
-          Page last updated: 2023-09-06
+          Page last updated: 2023-09-07
         </p>
 
         <ul>
