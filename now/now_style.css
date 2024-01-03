@@ -67,8 +67,15 @@ h2 {
   margin-top:2em;
 }
 
-h2 .emoji {
-  font-size:1.5em;
+.icon {
+  height:28px;
+  display:block;
+  margin:1em auto 0.5em;
+}
+
+.inline-icon {
+  height:22px;
+  display:inline;
 }
 
 p {
@@ -84,7 +91,7 @@ a.now-button {
   padding:0.5em 1.5ch;
   margin:0 0 0.75em;
   text-decoration:none;
-  background-color:#f1f0e9;
+  background-color:rgba(241, 240, 233, 0.6);
 }
 
 .platforms {
@@ -110,9 +117,8 @@ a.now-button .caption {
 }
 
 @media (hover:hover) {
-  a.now-button:not(.current-link):hover {
-    color:#000000;
-    background-color:#36541a;
-    filter:invert();
+  a.now-button:hover {
+    color:#ffffff;
+    background-color:rgba(175, 124, 163, 0.6);
   }
 }
