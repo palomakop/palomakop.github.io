@@ -91,7 +91,7 @@ a.now-button {
   padding:0.5em 1.5ch;
   margin:0 0 0.75em;
   text-decoration:none;
-  background-color:rgba(241, 240, 233, 0.6);
+  background-color:rgb(241, 240, 233);
 }
 
 .platforms {
@@ -119,6 +119,6 @@ a.now-button .caption {
 @media (hover:hover) {
   a.now-button:hover {
     color:#ffffff;
-    background-color:rgba(175, 124, 163, 0.6);
+    background-color:rgb(175, 124, 163);
   }
 }
