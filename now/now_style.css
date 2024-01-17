@@ -97,7 +97,7 @@ a.now-button {
 .platforms {
   display:flex;
   flex-wrap: wrap;
-  gap:0.75em;
+  gap:0 0.75em;
   justify-content:center;
 }
 
