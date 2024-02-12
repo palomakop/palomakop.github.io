@@ -43,12 +43,15 @@ main {
 }
 
 .tagline {
+  font-size:0.9em;
   display:block;
   margin:16px auto;
   max-width:32ch;
+  font-weight:bold;
+  letter-spacing:0.01em;
 }
 
-.link-caption {
+.caption {
   font-size:0.8em;
   font-style:italic;
 }
@@ -111,14 +114,20 @@ a.now-button {
   min-width:9ch;
 }
 
-a.now-button .caption {
-  font-size:0.8em;
-  font-style:italic;
-}
-
 @media (hover:hover) {
   a.now-button:hover {
     color:#ffffff;
     background-color:rgb(175, 124, 163);
   }
+}
+
+.notes {
+  width:calc(100%-3px);
+  display:block;
+  border:solid 1.5px;
+  border-radius:10px;
+  margin-bottom:5px;
+  padding:0 3ch;
+  text-decoration:none;
+  background-color:rgb(241, 240, 233);
 }
