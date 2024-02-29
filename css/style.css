@@ -671,6 +671,73 @@ video {
   content:'↗';
 }
 
+/* ZINE CLUB TIERS */
+
+.tier-gallery {
+  margin-top:35px;
+}
+
+@media only screen and (min-width:640px) {
+  .tier-gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, 420px);
+    justify-items:start;
+    gap:35px;
+  }
+}
+
+.tier {
+  margin:0;
+  border:solid 1.5px;
+  border-radius: 5px;
+  width:100%;
+}
+
+.tier-lower {
+  width:100%;
+  margin:0;
+  border-top:solid 1.5px;
+}
+
+.tier h2 {
+  font-style:italic;
+  font-size:1em;
+  margin:0px;
+  padding:10px 16px 0px;
+}
+
+.tier p {
+  font-size:0.85em;
+  margin:0;
+  padding:6px 16px 4px;
+}
+
+.tier img {
+  display:block;
+  height:250px;
+  width:auto;
+  margin:2em auto;
+}
+
+@media only screen and (min-width:640px) {
+  .tier {
+    width:420px;
+    margin-bottom:1em;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .tier {
+    width:100%;
+    width:calc(100% - 3px);
+    margin-bottom:2em;
+  }
+}
+
+.tier-caption {
+  font-style:italic;
+}
+
 /* FORMS */
 
 form {
