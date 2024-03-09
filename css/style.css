@@ -155,9 +155,11 @@ img {
 }
 
 .button.current-link {
-  padding:0px 8px;
+  padding:3px 8px;
+  border:solid 1.5px;
   color:#ffffff;
   background-color:#000000;
+  border-radius:5px;
 }
 
 @media (hover:hover) {
