@@ -789,10 +789,10 @@ video {
 
 .funding-mercury {
   border-radius:13.5px 0 0 13.5px;
-  width:36%;
+  width:45%;
   height:100%;
   background-image:linear-gradient(to right, #ff6666, #ffad33, #e6e600, #70db70, #4dd2ff, #9a9ae5, #ea62ea);
-  background-size:calc(10000% / 36);
+  background-size:calc(10000% / 45);
   display:flex;
   justify-content:right;
   align-items:center;
