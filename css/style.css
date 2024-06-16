@@ -72,7 +72,7 @@ a {
 }
 
 @media (hover:hover) {
-  a:hover {
+  a:hover, details summary:hover {
     text-decoration:dotted underline;
     text-decoration-thickness:2px;
     color:#210acf;
@@ -88,11 +88,28 @@ li {
   margin-bottom:1em;
 }
 
+ul.larger-bullets {
+  padding-left:2ch;
+}
+
+ul.larger-bullets li::marker {
+  font-size:1.2em;
+  line-height:1em;
+}
+
 code {
   font-family: Courier, monospace;
   font-size:1em;
   background-color:#dcdcdc96;
   padding:1px 4px;
+}
+
+details summary {
+  cursor:pointer;
+  color:#000000;
+  text-decoration:underline;
+  text-decoration-thickness:1.5px;
+  width:fit-content;
 }
 
 /* IMAGES */
@@ -963,6 +980,15 @@ form button {
   border-bottom:2px dotted;
   margin-top:1.5em;
   font-size:1.2em;
+}
+
+.cv h4 {
+  border-bottom:2px dotted;
+  margin-top:1.5em;
+  font-size:0.9em;
+  letter-spacing:0.05ch;
+  opacity:0.4;
+  font-style:italic;
 }
 
 .cv p {
