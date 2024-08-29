@@ -809,7 +809,7 @@ video {
   width:55%;
   height:100%;
   background-image:linear-gradient(to right, #ff6666, #ffad33, #e6e600, #70db70, #4dd2ff, #9a9ae5, #ea62ea);
-  background-size:calc(10000% / 62);
+  background-size:calc(10000% / 69);
   display:flex;
   justify-content:right;
   align-items:center;
