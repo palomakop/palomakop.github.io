@@ -1,4 +1,4 @@
-# My website, build with plain HTML/CSS
+# My website, built with plain HTML/CSS
 
 This is an old version of my website, built from scratch with HTML & CSS. It was superseded in October 2024 by a [new version built with 11ty](https://github.com/palomakop/palomakop.tv-11ty).
 
